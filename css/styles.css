@@ -44,13 +44,11 @@ div#container {
     box-shadow: 10px 10px 5px darkgrey;
     background: linear-gradient(lightblue, green);
 }
-
 img {
     /* added a slight opacity and rounded cornes to each book image */
     border-radius: 25px;
     opacity: 0.7;
 }
-
 h1 {
     font-size: 400%;
     margin: 0.5em;
@@ -69,52 +67,52 @@ h4 {
     text-align: left;
 }
 nav {
-        float: left;
-        /* made booknav the full width of the page */
-        width: 100%;
-        /* hid the extra part of the ul that is outside of the booknav */
-        overflow: hidden;
+    float: left;
+    /* made booknav the full width of the page */
+    width: 100%;
+    /* hid the extra part of the ul that is outside of the booknav */
+    overflow: hidden;
 }
 nav ul {
-        /* removed the padding and marging from the ul */
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        float: left;
-        position: relative;
-        left: 50%;
+    /* removed the padding and marging from the ul */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    position: relative;
+    left: 50%;
 }
 nav li {
-        /* made the list elements appear horizontally */
-        float: left;
-        position: relative;
-        right: 50%;
-        /* 0.30em space around each tab */
-        margin-right: 0.30em;
+    /* made the list elements appear horizontally */
+    float: left;
+    position: relative;
+    right: 50%;
+    /* 0.30em space around each tab */
+    margin-right: 0.30em;
 }
 nav li a {
-        /* made each anchor element a box */
-        display: block;
-        padding: 0.5em;
-        /* added a lightblue background colour */
-        background: lightblue;
-        /* underlined each nav link */
-        text-decoration: underline;
-        color: black;
+    /* made each anchor element a box */
+    display: block;
+    padding: 0.5em;
+    /* added a lightblue background colour */
+    background: lightblue;
+    /* underlined each nav link */
+    text-decoration: underline;
+    color: black;
 }
 nav li a:hover {
-        /* made the links white when hovered over */
-        background: white;
+    /* made the links white when hovered over */
+    background: white;
 }
 main, li {
-        /* made list background colour white */
-        background: white;
+    /* made list background colour white */
+    background: white;
 }
 main {
-        padding: 1em;
-        /* Clear the nav */
-        clear: both;
-        line-height: 1.5;
+    padding: 1em;
+    /* Clear the nav */
+    clear: both;
+    line-height: 1.5;
 }
 main h2 {
     /* kept the same green colour scheme going */
