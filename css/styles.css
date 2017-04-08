@@ -1,67 +1,74 @@
+html {
+    /* added Proxima Nova font to the entire page */
+    font-family: "Proxima Nova", sans-serif;
+}
 header p {
-    font-family: "Arial Black", Arial, sans-serif;
     margin: 0.5em;
     text-shadow: 3px 3px 0 #333;
     letter-spacing: 0.1em;
+    /* aligned the text to center and changed font colour to green */
     text-align: center;
     color: green;
 }
-body{
-        font-family: sans-serif;
-        /* fallback if the background image does not load */
-        background: grey;
-        background-image: url("../images/books-books-books.jpg");
-        padding: 0 5%;
+body {
+    /* fallback if the background image does not load */
+    background: grey;
+    /* added a books background image */
+    background-image: url("../images/books-books-books.jpg");
+    /* added padding around the body */
+    padding: 0 5%;
 }
 div#container {
-        min-width: 720px;
-        max-width: 1024px;
-        margin: 0 auto;
+    /* set container size */
+    min-width: 720px;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 #book1 {
+    /* surrounded the book1 section with a box shadow with a lightblue and green gradient */
     box-shadow: 10px 10px 5px darkgrey;
     background: linear-gradient(lightblue, green);
 }
 #book2 {
+    /* surrounded the book2 section with a box shadow with a lightblue and green gradient */
     box-shadow: 10px 10px 5px darkgrey;
     background: linear-gradient(lightblue, green);
 }
 #book3 {
+    /* surrounded the book3 section with a box shadow with a lightblue and green gradient */
     box-shadow: 10px 10px 5px darkgrey;
     background: linear-gradient(lightblue, green);
 }
 #book4 {
+    /* surrounded the book4 section with a box shadow with a lightblue and green gradient */
     box-shadow: 10px 10px 5px darkgrey;
     background: linear-gradient(lightblue, green);
 }
 
 img {
+    /* added a slight opacity and rounded cornes to each book image */
     border-radius: 25px;
     opacity: 0.7;
 }
 
 h1 {
-    font-family: "Arial Black", Arial, sans-serif;
     font-size: 400%;
     margin: 0.5em;
+    /* added a small text shadow */
     text-shadow: 3px 3px 0 #333;
-    letter-spacing: -0.1em;
+    letter-spacing: 0em;
+    /* centered the h1 text and set the colour to green */
     text-align: center;
     color: green;
 }
 h4 {
-    font-family: "Arial Black", Arial, sans-serif;
     margin: 0.5em;
+    /* added a text shadow to all h4 heading elements */
     text-shadow: 2px 2px 0 grey;
     letter-spacing: -0.1em;
     text-align: left;
 }
-
-header, footer {
-    color: white;
-}
 nav {
-        /*border: 3px solid lightblue;*/
         /* STEP 5: Set NAV to float so that it also clears its floated children */
         float: left;
         /* STEP 6: Force nav to render the full width of the page */
@@ -70,7 +77,6 @@ nav {
         overflow: hidden;
 }
 nav ul {
-        /*border: 3px solid deeppink;*/
         /* STEP 3: remove list markers, margin, and padding from UL container */
         list-style-type: none;
         padding: 0;
@@ -83,45 +89,45 @@ nav ul {
         left: 50%;
 }
 nav li {
-        /*border: 3px solid lawngreen;*/
-        /* STEP 2: Arrange LI elements horizontally */
+        /* made the list elements appear horizontally */
         float: left;
-        /* STEP 8a: Move each LI back to the left 50% of the width of the containing UL element */
         position: relative;
         right: 50%;
-        /* STEP 8b: Separate each tab with a bit of space */
-        margin-right: 0.25em;
+        /* 0.30em space around each tab */
+        margin-right: 0.30em;
 }
 nav li a {
-        /*border: 3px solid orange;*/
-        /* Render anchor elements as boxes */
+        /* made each anchor element a box */
         display: block;
         padding: 0.5em;
-        background: #ccc;
-        /* Style the text for the links */
-        text-decoration: none;
-        color: #000;
+        /* added a lightblue background colour */
+        background: lightblue;
+        /* underlined each nav link */
+        text-decoration: underline;
+        color: black;
 }
 nav li a:hover {
-        background: #fff;
-}
-nav li a#selected {
-        background: #fff;
+        /* made the links white when hovered over */
+        background: white;
 }
 main, li {
-        background: #fff;
+        /* made list background colour white */
+        background: white;
 }
 main {
         padding: 1em;
-        /* Clear the NAV element above */
+        /* Clear the nav */
         clear: both;
         line-height: 1.5;
 }
 main h2 {
+    /* kept the same green colour scheme going */
     color: green;
+    /* added an inset box shadow around the introductory heading so it stands out */
     box-shadow: inset 0 0 20px darkgrey;
 }
 .pullquote {
+    /* added a pullquote around a section of the first chapter in the first book */
     display: block;
     float: left;
     padding: 0 0 0 20px;
@@ -130,35 +136,36 @@ main h2 {
     font-size: 1.5em;
     line-height: 1.4em;
     text-align: left;
+    /* made the text colour white for easier viewability */
     color: white;
-    border-right: 3px solid #ccc;
+    border-right: 3px solid white;
+    /* added a lightblue and green gradient to the pullquote */
     background: linear-gradient(lightblue, green);
 }
 
 /* sticky footer back to top button */
-topbutton {
+#topbutton {
     position: fixed;
     bottom: 1.5em;
     right: 1.5em;
-    background-color: black;
-    background-color: rgba(0,0,0,0.3);
     padding: 10px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    /* Hide back to top button by default */
+    /* Hide back to top button */
     display: none;
 }
 footer {
-    font-family: "Arial Black", Arial, sans-serif;
     font-size: 400%;
     margin: 0.5em;
     text-shadow: 3px 3px 0 #333;
-    letter-spacing: -0.1em;
+    letter-spacing: 0em;
     text-align: center;
+    /* made the footer text colour green */
     color: green;
 }
 /* Media queries for different screen resolutions */
+/* Media query breakpoint at 320px and up */
 @media only screen and (min-width: 320px) {
     body {
         font-size: 110%;
