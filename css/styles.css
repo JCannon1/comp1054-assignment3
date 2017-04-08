@@ -69,22 +69,18 @@ h4 {
     text-align: left;
 }
 nav {
-        /* STEP 5: Set NAV to float so that it also clears its floated children */
         float: left;
-        /* STEP 6: Force nav to render the full width of the page */
+        /* made booknav the full width of the page */
         width: 100%;
-        /* STEP 9: Conceal the part of the UL that protrudes outside of the NAV element */
+        /* hid the extra part of the ul that is outside of the booknav */
         overflow: hidden;
 }
 nav ul {
-        /* STEP 3: remove list markers, margin, and padding from UL container */
+        /* removed the padding and marging from the ul */
         list-style-type: none;
         padding: 0;
         margin: 0;
-
-        /* STEP 4: Set UL to float so that it clears its floated children */
         float: left;
-        /* STEP 7: Move entire UL so that leftmost edge lines up with middle of page (50% of the width of the containing NAV element) */
         position: relative;
         left: 50%;
 }
